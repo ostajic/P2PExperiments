@@ -242,10 +242,10 @@ if (args.mode == 'client') and (args.ip is None):
 if __name__ == '__main__':
     try:
         if args.mode=='server':
-            print("would run server at port {}".format(args.port))
+            #print("would run server at port {}".format(args.port))
             RunServer()
         elif args.mode=='client':
-            print("Would run client to server at {}:{} with handle: {}".format(args.ip, args.port, args.handle))
+            #print("Would run client to server at {}:{} with handle: {}".format(args.ip, args.port, args.handle))
             RunClient()
     except Exception as badnews: 
         # basically exiting all threads on an exception
